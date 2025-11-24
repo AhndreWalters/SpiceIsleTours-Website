@@ -1,11 +1,12 @@
 <?php
-$host = 'localhost';
+$host = 'mysql-13861cad-walterstrahndre-2a07.j.aivencloud.com';
 $dbname = 'spice_isle_tours';
-$username = 'root';
-$password = '';
+$username = 'avnadmin';
+$password = 'AVNS_YWYg5JNJWfmJyiPmOPo';
+$port = '24791';
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname; port= $port", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     die("Connection failed: " . $e->getMessage());
