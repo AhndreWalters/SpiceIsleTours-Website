@@ -1,6 +1,4 @@
-/* ==================== */
-/* UNIVERSAL NAVIGATION */
-/* ==================== */
+
 .sub-menu {
     position: fixed;
     top: 0;
@@ -9,7 +7,7 @@
     z-index: 1000;
     text-align: center;
     padding: 20px 0;
-    background-color: #222; /* Default for all pages */
+    background-color: #222;
 }
 
 .sub-menu ul {
@@ -43,7 +41,7 @@
     transform: scale(1.05);
 }
 
-/* Auth link styling */
+
 .auth-link {
     background: rgba(255,255,255,0.1);
     padding: 5px 15px;
@@ -55,17 +53,12 @@
     font-weight: bold;
 }
 
-/* ==================== */
-/* HOMEPAGE NAVIGATION - TRANSPARENT */
-/* ==================== */
 body.homepage .sub-menu {
     background: transparent !important;
     top: 5px;
 }
 
-/* ==================== */
-/* OTHER PAGES NAVIGATION */
-/* ==================== */
+
 body:not(.homepage) .sub-menu {
     background-color: #222;
 }
