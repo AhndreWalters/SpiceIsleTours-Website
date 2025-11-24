@@ -13,7 +13,7 @@ include 'config/database.php';
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body class="homepage"> <!-- ADD THIS CLASS -->
+<body class="homepage">
     <?php include 'includes/navigation.php'; ?>
     
     <div class="top-content__video">

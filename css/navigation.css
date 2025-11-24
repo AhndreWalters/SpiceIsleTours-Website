@@ -45,7 +45,6 @@
 
 /* Auth link styling */
 .auth-link {
-    margin-left: auto;
     background: rgba(255,255,255,0.1);
     padding: 5px 15px;
     border-radius: 20px;
@@ -61,7 +60,7 @@
 /* ==================== */
 body.homepage .sub-menu {
     background: transparent !important;
-    top: 25px;
+    top: 5px;
 }
 
 /* ==================== */
@@ -70,3 +69,7 @@ body.homepage .sub-menu {
 body:not(.homepage) .sub-menu {
     background-color: #222;
 }
+
+
+
+
