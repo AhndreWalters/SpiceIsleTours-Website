@@ -1,4 +1,3 @@
-// Check for success/error messages in URL
 const urlParams = new URLSearchParams(window.location.search);
 const status = urlParams.get('status');
 

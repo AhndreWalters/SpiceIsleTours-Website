@@ -1,5 +1,4 @@
 <?php
-// Check if functions are already defined to prevent redeclaration
 if (!function_exists('secureSessionStart')) {
     function secureSessionStart() {
         if (session_status() == PHP_SESSION_NONE) {
