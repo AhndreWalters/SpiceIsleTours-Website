@@ -221,44 +221,9 @@ body.homepage {
   text-align: center;
 }
 
-/* ===== ABOUT PAGE STYLES ===== */
-.partnership-notice {
-  background: rgba(193, 147, 131, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
-  border-left: 4px solid #c19383;
-}
-
-.resort-connection {
-  background: rgba(122, 111, 104, 0.05);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
-  border: 1px solid rgba(122, 111, 104, 0.2);
-}
-
-.future-expansion {
-  background: rgba(90, 74, 66, 0.05);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.section-title {
-  font-size: 24px;
-  color: #5a4a42;
-  margin: 30px 0 15px 0;
-  font-family: "Playfair Display", serif;
-}
-
-.subheading {
-  font-size: 18px;
-  color: #7c6e67;
-  margin-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
+/* ===== ABOUT PAGE STYLES - RESTORED TO ORIGINAL ===== */
+/* Removed all the extra styling that was added */
+/* The About page now uses only the common intro-content styles above */
 
 /* ===== TOURS PAGE STYLES ===== */
 .tours-list {
