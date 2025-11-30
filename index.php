@@ -10,7 +10,6 @@ include 'config/database.php';
     <link rel="shortcut icon" href="https://symphony.cdn.tambourine.com/spice-island-redesign/files/spiceisland-favicon-68d55fc21ca1c.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="homepage">
