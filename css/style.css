@@ -792,8 +792,8 @@ a:hover {
 }
 
 .booking-page .intro-content {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding-top: 120px; /* Reduced from 160px */
+  padding-bottom: 60px; /* Reduced from 100px */
 }
 
 .alert-success {
