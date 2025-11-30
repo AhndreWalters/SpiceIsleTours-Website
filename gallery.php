@@ -20,6 +20,7 @@ require_once 'auth_check.php';
         <section class="intro-content">
             <div class="container">
                 <h1>Gallery</h1>
+                <h2>Discover the Beauty of Grenada</h2>
                 <p>Explore breathtaking moments from our island tours, showcasing the natural beauty, culture, and warmth of Grenada.</p>
             </div>
         </section>
