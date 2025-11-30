@@ -848,11 +848,12 @@ a:hover {
 
 .form-group label {
   display: block;
-  font-size: 15px;
-  color: #5a4a42;
-  margin-bottom: 8px;
-  letter-spacing: 0.5px;
+  font-size: 12px;
+  color: #7c6e67;
+  margin-bottom: 10px;
+  letter-spacing: 1.0px;
   font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
 }
 
 .form-group input,
