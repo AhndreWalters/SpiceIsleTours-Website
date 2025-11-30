@@ -791,6 +791,11 @@ a:hover {
   font-weight: 100;
 }
 
+.booking-page .intro-content {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
 .alert-success {
   background: #d4edda;
   color: #155724;
