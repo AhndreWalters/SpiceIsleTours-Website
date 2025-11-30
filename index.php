@@ -24,14 +24,9 @@ include 'config/database.php';
     <div class="top-content__uvp"><br><br>
         <span class="top">Grenada</span>
         <span>Spice Isle Tours</span>
-        
-        <?php if(isset($_SESSION['username'])): ?>
-            <div style="text-align: center; margin: 20px 0; font-size: 18px; color: white;">
-                Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!
-            </div>
-        <?php endif; ?>
 
         <br><br><br><br>
+        
         <span class="sub-btm">© 2025 All Rights Reserved</span>
     </div>
 </body>
