@@ -1228,6 +1228,10 @@ a:hover {
   line-height: 2;
 }
 
+.tours-list {
+  padding-bottom: 60px;
+}
+
 @media (max-width: 768px) {
   .tour h3 {
     font-size: 20px;
@@ -1235,5 +1239,9 @@ a:hover {
 
   .tour p {
     font-size: 15px;
+  }
+
+  .tours-list {
+    padding-bottom: 40px;
   }
 }
