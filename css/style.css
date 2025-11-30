@@ -79,7 +79,7 @@ body {
 
 .sub-menu li:last-child a {
   color: #c19383;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 body.homepage .sub-menu {
