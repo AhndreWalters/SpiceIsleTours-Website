@@ -50,6 +50,9 @@ body {
   text-align: center;
   padding: 20px 0;
   background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-menu ul {
@@ -61,10 +64,12 @@ body {
   align-items: center;
   gap: 35px;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .sub-menu li {
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .sub-menu a {
@@ -76,6 +81,7 @@ body {
   text-transform: uppercase;
   transition: color 0.4s ease, opacity 0.4s ease, transform 0.3s ease;
   font-weight: lighter;
+  white-space: nowrap;
 }
 
 .sub-menu a:hover {
@@ -90,7 +96,7 @@ body {
 }
 
 .sub-menu li:last-child {
-  margin-left: auto;
+  margin-left: 0;
   background: rgba(255,255,255,0.1);
   padding: 5px 15px;
   border-radius: 20px;
@@ -110,47 +116,10 @@ body:not(.homepage) .sub-menu {
   background-color: #222;
 }
 
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 12px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1002;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 6px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.hamburger-menu span {
-  width: 25px;
-  height: 3px;
-  background: #ffffff;
-  margin: 3px 0;
-  transition: 0.3s;
-  border-radius: 2px;
-}
-
+/* REMOVE ALL HAMBURGER MENU STYLES */
+.hamburger-menu,
 .nav-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 998;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-}
-
-.nav-overlay.active {
-  opacity: 1;
-  visibility: visible;
+  display: none !important;
 }
 
 /* ===== HOMEPAGE STYLES ===== */
@@ -718,7 +687,7 @@ body.booking-page .booking-form {
   flex: 1;
   text-align: left;
   padding: 20px 0;
-  min-width: 0; /* Changed from 300px to allow proper flex behavior */
+  min-width: 0;
 }
 
 .section-text h3 {
@@ -750,7 +719,7 @@ body.booking-page .booking-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 0; /* Changed from 300px to allow proper flex behavior */
+  min-width: 0;
 }
 
 .section-img img {
@@ -766,34 +735,6 @@ body.booking-page .booking-form {
 .section-img img:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 992px) {
-  .island-section {
-    gap: 40px;
-    padding: 60px 6%;
-  }
-
-  .section-img img {
-    max-width: 360px;
-  }
-}
-
-@media (max-width: 768px) {
-  .island-section {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .section-text {
-    text-align: center;
-  }
-
-  .section-img img {
-    max-width: 300px;
-  }
 }
 
 /* ===== TOURS PAGE STYLES ===== */
@@ -941,6 +882,10 @@ body.booking-page .booking-form {
     gap: 40px;
     padding: 60px 5%;
   }
+  
+  .sub-menu ul {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -962,6 +907,10 @@ body.booking-page .booking-form {
   .masonry-gallery {
     column-count: 3;
   }
+  
+  .sub-menu ul {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -976,93 +925,19 @@ body.booking-page .booking-form {
 }
 
 @media (max-width: 850px) {
+  /* REMOVE ALL MOBILE MENU STYLES - KEEP NAVIGATION VISIBLE */
   .sub-menu {
-    display: none !important;
+    display: flex !important;
+    padding: 15px 0;
   }
   
-  .hamburger-menu {
-    display: flex;
+  .sub-menu ul {
+    gap: 15px;
+    justify-content: center;
   }
   
-  .nav-links {
-    display: none;
-  }
-  
-  .nav-links.active {
-    display: flex;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 280px;
-    height: 100vh;
-    background: #222;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 80px 30px 30px;
-    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1001;
-    overflow-y: auto;
-    gap: 0;
-  }
-  
-  .nav-links.active {
-    right: 0;
-  }
-  
-  .nav-links li {
-    display: block;
-    width: 100%;
-    margin: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .nav-links a {
-    display: block;
-    padding: 18px 0;
-    font-size: 16px;
-    letter-spacing: 1px;
-    width: 100%;
-    border: none;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-links a:hover,
-  .nav-links a.active {
-    background: rgba(193, 147, 131, 0.1);
-    padding-left: 15px;
-    transform: none;
-  }
-  
-  .auth-link {
-    margin: 25px 0 0 0 !important;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 15px 20px;
-    border-radius: 8px;
-    text-align: center;
-    width: 100%;
-    border: none;
-  }
-  
-  .auth-link a {
-    font-size: 15px;
-    border: none !important;
-  }
-  
-  .hamburger-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-  }
-  
-  .hamburger-menu.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger-menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-  }
-  
-  .intro-content {
-    padding-top: 80px !important;
+  .sub-menu a {
+    font-size: 11px;
   }
   
   .masonry-gallery {
@@ -1081,14 +956,13 @@ body.booking-page .booking-form {
 }
 
 @media (max-width: 768px) {
-  .nav-links.active {
-    width: 280px;
-    padding: 70px 25px 25px;
+  .sub-menu ul {
+    gap: 12px;
   }
   
-  .hamburger-menu {
-    top: 20px;
-    right: 20px;
+  .sub-menu a {
+    font-size: 10px;
+    letter-spacing: 0.5px;
   }
   
   .form-container {
@@ -1116,35 +990,33 @@ body.booking-page .booking-form {
   }
 }
 
+@media (max-width: 650px) {
+  .sub-menu {
+    padding: 12px 0;
+  }
+  
+  .sub-menu ul {
+    gap: 10px;
+  }
+  
+  .sub-menu a {
+    font-size: 9px;
+    letter-spacing: 0.3px;
+  }
+}
+
 @media (max-width: 480px) {
-  .nav-links.active {
-    width: 85%;
-    max-width: 280px;
-    padding: 70px 20px 20px;
+  .sub-menu {
+    padding: 10px 0;
   }
   
-  .hamburger-menu {
-    top: 15px;
-    right: 15px;
-    padding: 10px;
+  .sub-menu ul {
+    gap: 8px;
   }
   
-  .hamburger-menu span {
-    width: 22px;
-    height: 2.5px;
-  }
-  
-  .nav-links a {
-    font-size: 15px;
-    padding: 16px 0;
-  }
-  
-  .auth-link {
-    padding: 12px 15px;
-  }
-  
-  .intro-content {
-    padding-top: 70px !important;
+  .sub-menu a {
+    font-size: 8px;
+    letter-spacing: 0.2px;
   }
   
   .masonry-gallery {
@@ -1164,44 +1036,22 @@ body.booking-page .booking-form {
   .form-group textarea {
     padding: 12px 14px;
   }
+  
+  .intro-content {
+    padding-top: 80px !important;
+  }
 }
 
 @media (max-width: 320px) {
-  .nav-links.active {
-    width: 90%;
-    padding: 60px 15px 15px;
+  .sub-menu ul {
+    gap: 6px;
   }
   
-  .nav-links a {
-    font-size: 14px;
-    padding: 14px 0;
-  }
-  
-  .hamburger-menu {
-    top: 12px;
-    right: 12px;
-    padding: 8px;
+  .sub-menu a {
+    font-size: 7px;
   }
   
   .container {
     padding: 0 10px;
-  }
-}
-
-@media (min-width: 851px) {
-  .hamburger-menu {
-    display: none !important;
-  }
-  
-  .nav-overlay {
-    display: none !important;
-  }
-  
-  .sub-menu {
-    display: block !important;
-  }
-  
-  .nav-links {
-    display: inline-flex !important;
   }
 }
