@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navOverlay = document.getElementById('nav-overlay');
     const body = document.body;
     
-    // Check if elements exist
+    // Check if elements exist (for pages without mobile menu)
     if (!hamburgerMenu || !navLinks || !navOverlay) {
         console.log('Navigation elements not found');
         return;
