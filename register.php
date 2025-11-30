@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="auth-page">
     <div class="top-content__video">
         <video autoplay loop muted playsinline>
             <source src="video/spiceislandbeachresort-video.mp4" type="video/mp4">
