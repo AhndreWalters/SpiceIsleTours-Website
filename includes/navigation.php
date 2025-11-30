@@ -9,12 +9,6 @@ $isHomepage = (basename($_SERVER['PHP_SELF']) == 'index.php');
 ?>
 
 <nav class="sub-menu <?php echo $isHomepage ? 'homepage-nav' : 'page-nav'; ?>" role="navigation" aria-label="Main Navigation">
-    <!-- Hamburger Menu Button -->
-    <div class="hamburger-menu" id="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
     
     <!-- Navigation Links -->
     <ul class="nav-links" id="nav-links">
