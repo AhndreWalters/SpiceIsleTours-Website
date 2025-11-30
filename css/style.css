@@ -727,7 +727,7 @@ a:hover {
 
 /* ===== BOOKING PAGE STYLES ===== */
 .intro-content h1.page-title {
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 2px;
   color: #7c6e67;
   text-transform: uppercase;
@@ -804,7 +804,7 @@ body.booking-page .booking-form {
 
 /* ===== CONTACT PAGE STYLES ===== */
 .intro-content h1.contact-title {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 2px;
   color: #7c6e67;
   text-transform: uppercase;
@@ -923,6 +923,10 @@ body.booking-page .booking-form {
 }
 
 /* ===== FAQ PAGE STYLES ===== */
+.intro-content h1.page-title {
+  font-size: 15px;
+}
+
 .faq-list {
   max-width: 900px;
   margin: 40px auto 100px;
@@ -999,6 +1003,10 @@ body.booking-page .booking-form {
 }
 
 /* ===== GALLERY PAGE STYLES ===== */
+.intro-content h1.page-title {
+  font-size: 15px;
+}
+
 .gallery-section {
   width: 90%;
   max-width: 1400px;
@@ -1083,6 +1091,10 @@ body.booking-page .booking-form {
 }
 
 /* ===== ISLAND PAGE STYLES ===== */
+.intro-content h1.page-title {
+  font-size: 15px;
+}
+
 .island-section {
   display: flex;
   align-items: center;
@@ -1177,6 +1189,10 @@ body.booking-page .booking-form {
 }
 
 /* ===== TOURS PAGE STYLES ===== */
+.intro-content h1.page-title {
+  font-size: 15px;
+}
+
 .tours-list {
   max-width: 900px;
   margin: 20px auto 80px;
