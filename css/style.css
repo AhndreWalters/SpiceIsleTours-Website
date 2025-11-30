@@ -221,11 +221,7 @@ body.homepage {
   text-align: center;
 }
 
-/* ===== ABOUT PAGE STYLES - RESTORED TO ORIGINAL ===== */
-/* Removed all the extra styling that was added */
-/* The About page now uses only the common intro-content styles above */
-
-/* ===== TOURS PAGE STYLES ===== */
+/* ===== TOURS PAGE STYLES - RESTORED TO ORIGINAL ===== */
 .tours-list {
   max-width: 900px;
   margin: 40px auto 100px;
@@ -233,18 +229,8 @@ body.homepage {
 }
 
 .tour {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tour:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .tour h3 {
