@@ -1115,7 +1115,6 @@ a:hover {
   padding: 80px 10%;
   background-color: #f7efed;
   flex-wrap: wrap;
-  border-bottom: 1px solid #e4dcd8;
   animation: fadeIn 1.2s ease forwards;
 }
 
