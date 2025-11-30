@@ -206,7 +206,6 @@ body.homepage {
   width: 100%;
 }
 
-/* Allow text to break on small screens */
 @media (max-width: 768px) {
   .top-content__uvp span:not(.top):not(.bottom):not(.sub-btm) {
     white-space: normal;
