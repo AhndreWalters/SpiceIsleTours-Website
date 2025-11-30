@@ -2,7 +2,7 @@
 $host = 'mysql-13861cad-walterstrahndre-2a07.j.aivencloud.com';
 $dbname = 'spice_isle_tours';
 $username = 'avnadmin';
-$password = $_ENV['DB_password'] ?? '';
+$password = 'AVNS_YWYg5JNJWfmJyiPmOPo';
 $port = '24791';
 
 try {
