@@ -926,6 +926,11 @@ a:hover {
   flex: 1;
 }
 
+.contact-form {
+  padding-bottom: 60px;
+
+}
+
 @media (max-width: 768px) {
   .intro-content h1.contact-title {
     font-size: 13px;
@@ -1080,6 +1085,10 @@ a:hover {
 
 .close:hover {
   color: #c19383;
+}
+
+.gallery-section {
+  padding-bottom: 60px;
 }
 
 @media (max-width: 1200px) {
