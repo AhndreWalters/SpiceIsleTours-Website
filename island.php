@@ -11,7 +11,6 @@ require_once 'auth_check.php';
     <title>Island | Spice Isle Tours</title>
     <link rel="shortcut icon" href="https://symphony.cdn.tambourine.com/spice-island-redesign/files/spiceisland-favicon-68d55fc21ca1c.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/navigation.css">
 </head>
 <body>
     <?php include 'includes/navigation.php'; ?>
