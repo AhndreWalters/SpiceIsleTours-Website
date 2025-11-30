@@ -926,7 +926,7 @@ a:hover {
 }
 
 .contact-section {
-  max-width: 900px;
+  max-width: 600px; /* Changed from 900px to match form */
   margin: 40px auto 40px;
   padding: 0 20px;
 }
@@ -939,6 +939,7 @@ a:hover {
   text-align: left;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Ensure full width of container */
 }
 
 .contact-card:hover {
@@ -968,7 +969,7 @@ a:hover {
 }
 
 .contact-form-section {
-  max-width: 900px;
+  max-width: 600px; /* Ensure same width as contact cards */
   margin: 40px auto 100px;
   padding: 0 20px;
   padding-bottom: 60px;
@@ -980,6 +981,7 @@ a:hover {
   padding: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Ensure full width of container */
 }
 
 .contact-form-section .form-container:hover {
@@ -1023,6 +1025,12 @@ a:hover {
 
   .contact-form-section .form-container {
     padding: 20px;
+  }
+  
+  .contact-section,
+  .contact-form-section {
+    max-width: 100%;
+    padding: 0 15px;
   }
 }
 
