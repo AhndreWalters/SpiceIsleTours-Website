@@ -57,13 +57,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             
             <form method="POST" action="">
                 <div class="form-group">
-                    <label>Username or Email:</label>
-                    <input type="text" name="username" value="<?php echo htmlspecialchars($username); ?>" required>
+                    <label>Username or Email</label>
+                    <input type="text" name="username" placeholder="Username or Email" <?php echo htmlspecialchars($username); ?>" required>
                 </div>
                 
                 <div class="form-group">
-                    <label>Password:</label>
-                    <input type="password" name="password" required>
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password" required>
                 </div>
                 
                 <button type="submit" class="btn">Login</button>
