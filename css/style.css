@@ -419,7 +419,7 @@ a:hover {
 
 /* ===== BOOKING PAGE STYLES ===== */
 body.booking-page .intro-content {
-  padding: 160px 0 100px; /* Changed from padding-top: 100px; padding-bottom: 40px; */
+  padding: 160px 0 100px;
 }
 
 .alert-success {
