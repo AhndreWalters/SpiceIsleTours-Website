@@ -9,8 +9,7 @@ $isHomepage = (basename($_SERVER['PHP_SELF']) == 'index.php');
 ?>
 
 <nav class="sub-menu <?php echo $isHomepage ? 'homepage-nav' : 'page-nav'; ?>" role="navigation" aria-label="Main Navigation">
-    
-    <!-- Navigation Links -->
+
     <ul class="nav-links" id="nav-links">
         <li><a href="index.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">HOME</a></li>
         <li><a href="about.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : ''; ?>">ABOUT</a></li>
@@ -28,7 +27,6 @@ $isHomepage = (basename($_SERVER['PHP_SELF']) == 'index.php');
         <?php endif; ?>
     </ul>
     
-    <!-- Overlay for mobile menu -->
     <div class="nav-overlay" id="nav-overlay"></div>
 </nav>
 
