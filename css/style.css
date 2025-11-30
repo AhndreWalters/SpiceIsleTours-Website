@@ -30,8 +30,9 @@ body {
   width: 100%;
   z-index: 1000;
   text-align: center;
-  padding: 20px 0;
   background-color: #222;
+  border-bottom: 1px solid #222;
+  padding: 20px 0;
 }
 
 .sub-menu ul {
@@ -59,20 +60,25 @@ body {
   transition: color 0.4s ease, opacity 0.4s ease, transform 0.3s ease;
 }
 
-.sub-menu a:hover,
-.sub-menu a.active {
+.sub-menu a:hover {
+  opacity: 0.7;
   color: #c19383;
   transform: scale(1.05);
 }
 
-.auth-link {
+.sub-menu ul li a.active {
+  color: #c19383;
+}
+
+.sub-menu li:last-child {
+  margin-left: auto;
   background: rgba(255,255,255,0.1);
   padding: 5px 15px;
   border-radius: 20px;
 }
 
-.auth-link a {
-  color: #c19383 !important;
+.sub-menu li:last-child a {
+  color: #c19383;
   font-weight: bold;
 }
 
@@ -221,7 +227,21 @@ body.homepage {
   text-align: center;
 }
 
-/* ===== TOURS PAGE STYLES - RESTORED TO ORIGINAL ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== ABOUT PAGE STYLES ===== */
+/* Uses only common intro-content styles */
+
+/* ===== TOURS PAGE STYLES ===== */
 .tours-list {
   max-width: 900px;
   margin: 40px auto 100px;
@@ -389,6 +409,45 @@ body.homepage {
   transform: translateY(-2px);
 }
 
+.alert-success {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.alert-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.alert-error h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.alert-error ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.alert-error li {
+  margin-bottom: 5px;
+}
+
 /* ===== ISLAND PAGE STYLES ===== */
 .island-section {
   display: flex;
@@ -456,23 +515,6 @@ body.homepage {
 .section-img img:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-.section-link {
-  margin-top: 20px;
-}
-
-.section-link a {
-  color: #c19383;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  transition: all 0.3s ease;
-}
-
-.section-link a:hover {
-  text-decoration: underline;
-  color: #b07d6f;
 }
 
 /* ===== FAQ PAGE STYLES ===== */
@@ -676,6 +718,48 @@ body.auth-page {
   line-height: 1.5;
 }
 
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #5a4a42;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid #e8e1dd;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.95);
+  color: #5a4a42;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #c19383;
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(193, 147, 131, 0.15);
+  transform: translateY(-1px);
+}
+
+.form-group input::placeholder {
+  color: #a89a94;
+  opacity: 0.7;
+}
+
 .btn {
   width: 100%;
   padding: 16px;
@@ -727,56 +811,24 @@ body.auth-page {
   line-height: 1.4;
 }
 
-/* ===== ALERT STYLES ===== */
-.alert-success {
-  background: #d4edda;
-  color: #155724;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  border: 1px solid #c3e6cb;
-  text-align: center;
-  max-width: 600px;
-  margin: 20px auto;
+a {
+  color: #c19383;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s ease;
 }
 
-.alert-error {
-  background: #f8d7da;
-  color: #721c24;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  border: 1px solid #f5c6cb;
-  text-align: left;
-  max-width: 600px;
-  margin: 20px auto;
+a:hover {
+  text-decoration: underline;
+  color: #b07d6f;
 }
 
-.alert-error h4 {
-  margin: 0 0 10px 0;
-  font-size: 16px;
-  text-align: center;
-}
-
-.alert-error ul {
-  margin: 10px 0;
-  padding-left: 20px;
-}
-
-.alert-error li {
-  margin-bottom: 5px;
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.auth-form > p:last-of-type {
+  margin-top: 30px;
+  color: #7a6f68;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
 }
 
 @keyframes fadeInUp {
