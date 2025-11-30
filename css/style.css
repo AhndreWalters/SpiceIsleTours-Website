@@ -701,11 +701,10 @@ body.booking-page .booking-form {
 .island-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 60px;
   padding: 80px 10%;
   background-color: #f7efed;
-  flex-wrap: wrap;
   animation: fadeIn 1.2s ease forwards;
   width: 100%;
   max-width: 1200px;
@@ -717,10 +716,10 @@ body.booking-page .booking-form {
 }
 
 .section-text {
-  flex: 1 1 450px;
+  flex: 1;
   text-align: left;
   padding: 20px 0;
-  min-width: 300px;
+  min-width: 0; /* Changed from 300px to allow proper flex behavior */
 }
 
 .section-text h3 {
@@ -748,11 +747,11 @@ body.booking-page .booking-form {
 }
 
 .section-img {
-  flex: 1 1 450px;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
+  min-width: 0; /* Changed from 300px to allow proper flex behavior */
 }
 
 .section-img img {
@@ -768,6 +767,34 @@ body.booking-page .booking-form {
 .section-img img:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+  .island-section {
+    gap: 40px;
+    padding: 60px 6%;
+  }
+
+  .section-img img {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .island-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .section-text {
+    text-align: center;
+  }
+
+  .section-img img {
+    max-width: 300px;
+  }
 }
 
 /* ===== TOURS PAGE STYLES ===== */
