@@ -53,6 +53,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 70px; /* Ensure minimum height */
+  box-sizing: border-box;
 }
 
 .sub-menu ul {
@@ -107,9 +109,32 @@ body {
   font-weight: lighter;
 }
 
+/* HOMEPAGE NAVIGATION STYLES */
 body.homepage .sub-menu {
   background: transparent !important;
   top: 5px;
+  padding: 15px 0;
+  min-height: 60px;
+}
+
+body.homepage .sub-menu a {
+  color: #ffffff;
+}
+
+body.homepage .sub-menu a:hover {
+  color: #c19383;
+}
+
+body.homepage .sub-menu ul li a.active {
+  color: #c19383;
+}
+
+body.homepage .sub-menu li:last-child {
+  background: rgba(255,255,255,0.15);
+}
+
+body.homepage .sub-menu li:last-child a {
+  color: #c19383;
 }
 
 body:not(.homepage) .sub-menu {
@@ -203,12 +228,23 @@ body.homepage {
 }
 
 /* ===== COMMON CONTENT STYLES ===== */
+/* Dynamic padding based on navigation height */
 .intro-content {
   padding: 160px 0 100px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0; /* Reset any margin */
+}
+
+/* Ensure content moves down when navigation wraps */
+body:not(.homepage) .intro-content {
+  padding-top: calc(70px + 40px); /* Base nav height + buffer */
+}
+
+body.homepage .intro-content {
+  padding-top: calc(60px + 40px); /* Homepage nav height + buffer */
 }
 
 .intro-content .container {
@@ -886,6 +922,15 @@ body.booking-page .booking-form {
   .sub-menu ul {
     gap: 30px;
   }
+  
+  /* Adjust content padding for wrapped navigation */
+  body:not(.homepage) .intro-content {
+    padding-top: calc(80px + 40px);
+  }
+  
+  body.homepage .intro-content {
+    padding-top: calc(70px + 40px);
+  }
 }
 
 @media (max-width: 1100px) {
@@ -911,6 +956,15 @@ body.booking-page .booking-form {
   .sub-menu ul {
     gap: 20px;
   }
+  
+  /* Adjust content padding for wrapped navigation */
+  body:not(.homepage) .intro-content {
+    padding-top: calc(90px + 40px);
+  }
+  
+  body.homepage .intro-content {
+    padding-top: calc(80px + 40px);
+  }
 }
 
 @media (max-width: 950px) {
@@ -929,6 +983,12 @@ body.booking-page .booking-form {
   .sub-menu {
     display: flex !important;
     padding: 15px 0;
+    min-height: 80px;
+  }
+  
+  body.homepage .sub-menu {
+    min-height: 70px;
+    padding: 12px 0;
   }
   
   .sub-menu ul {
@@ -952,6 +1012,15 @@ body.booking-page .booking-form {
   
   .section-text {
     text-align: center;
+  }
+  
+  /* Adjust content padding for wrapped navigation */
+  body:not(.homepage) .intro-content {
+    padding-top: calc(100px + 40px);
+  }
+  
+  body.homepage .intro-content {
+    padding-top: calc(90px + 40px);
   }
 }
 
@@ -988,11 +1057,26 @@ body.booking-page .booking-form {
   .masonry-gallery {
     column-count: 2;
   }
+  
+  /* Adjust content padding for wrapped navigation */
+  body:not(.homepage) .intro-content {
+    padding-top: calc(110px + 40px);
+  }
+  
+  body.homepage .intro-content {
+    padding-top: calc(100px + 40px);
+  }
 }
 
 @media (max-width: 650px) {
   .sub-menu {
     padding: 12px 0;
+    min-height: 90px;
+  }
+  
+  body.homepage .sub-menu {
+    min-height: 80px;
+    padding: 10px 0;
   }
   
   .sub-menu ul {
@@ -1003,11 +1087,26 @@ body.booking-page .booking-form {
     font-size: 9px;
     letter-spacing: 0.3px;
   }
+  
+  /* Adjust content padding for wrapped navigation */
+  body:not(.homepage) .intro-content {
+    padding-top: calc(120px + 40px);
+  }
+  
+  body.homepage .intro-content {
+    padding-top: calc(110px + 40px);
+  }
 }
 
 @media (max-width: 480px) {
   .sub-menu {
     padding: 10px 0;
+    min-height: 100px;
+  }
+  
+  body.homepage .sub-menu {
+    min-height: 90px;
+    padding: 8px 0;
   }
   
   .sub-menu ul {
@@ -1037,8 +1136,13 @@ body.booking-page .booking-form {
     padding: 12px 14px;
   }
   
-  .intro-content {
-    padding-top: 80px !important;
+  /* Adjust content padding for wrapped navigation */
+  body:not(.homepage) .intro-content {
+    padding-top: calc(130px + 40px);
+  }
+  
+  body.homepage .intro-content {
+    padding-top: calc(120px + 40px);
   }
 }
 
@@ -1053,5 +1157,14 @@ body.booking-page .booking-form {
   
   .container {
     padding: 0 10px;
+  }
+  
+  /* Adjust content padding for wrapped navigation */
+  body:not(.homepage) .intro-content {
+    padding-top: calc(140px + 40px);
+  }
+  
+  body.homepage .intro-content {
+    padding-top: calc(130px + 40px);
   }
 }
