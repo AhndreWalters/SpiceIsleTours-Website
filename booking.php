@@ -71,17 +71,17 @@ if (isset($_SESSION['form_data'])) {
                 <form action="process_booking.php" method="post">
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" value="<?php echo isset($form_data['name']) ? htmlspecialchars($form_data['name']) : ''; ?>" required>
+                        <input type="text" id="name" name="name" placeholder="Full Name" <?php echo isset($form_data['name']) ? htmlspecialchars($form_data['name']) : ''; ?>" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" value="<?php echo isset($form_data['email']) ? htmlspecialchars($form_data['email']) : ''; ?>" required>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" value="<?php echo isset($form_data['email']) ? htmlspecialchars($form_data['email']) : ''; ?>" required>
                     </div>
 
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" value="<?php echo isset($form_data['phone']) ? htmlspecialchars($form_data['phone']) : ''; ?>" required>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (473) 555-0123" value="<?php echo isset($form_data['phone']) ? htmlspecialchars($form_data['phone']) : ''; ?>" required>
                     </div>
 
                     <div class="form-group">
