@@ -53,7 +53,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70px; /* Ensure minimum height */
+  min-height: 70px;
   box-sizing: border-box;
 }
 
@@ -178,6 +178,10 @@ body.homepage {
   width: 100%;
   max-width: 1200px;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-content__uvp .top {
@@ -187,6 +191,8 @@ body.homepage {
   opacity: 0.8;
   margin-bottom: 10px;
   line-height: 1.2;
+  text-align: center;
+  width: 100%;
 }
 
 .top-content__uvp span:not(.top):not(.bottom):not(.sub-btm) {
@@ -196,6 +202,24 @@ body.homepage {
   display: block;
   line-height: 1.1;
   margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Allow text to break on small screens */
+@media (max-width: 768px) {
+  .top-content__uvp span:not(.top):not(.bottom):not(.sub-btm) {
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-content__uvp span:not(.top):not(.bottom):not(.sub-btm) {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    line-height: 1.3;
+  }
 }
 
 .top-content__uvp .bottom {
@@ -204,6 +228,7 @@ body.homepage {
   display: inline-block;
   margin-left: 10px;
   line-height: 1.1;
+  text-align: center;
 }
 
 .top-content__uvp .sub-btm {
@@ -214,6 +239,8 @@ body.homepage {
   opacity: 0.8;
   text-transform: uppercase;
   line-height: 1.5;
+  text-align: center;
+  width: 100%;
 }
 
 .welcome-message {
@@ -225,6 +252,7 @@ body.homepage {
   font-style: normal;
   opacity: 0.9;
   line-height: 1.4;
+  width: 100%;
 }
 
 /* ===== COMMON CONTENT STYLES ===== */
