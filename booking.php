@@ -2,8 +2,6 @@
 include 'config/database.php';
 require_once 'auth_check.php';
 
-session_start();
-
 $success_message = '';
 $error_messages = [];
 $form_data = [];
@@ -71,7 +69,7 @@ if (isset($_SESSION['form_data'])) {
                 <form action="process_booking.php" method="post">
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Full Name" <?php echo isset($form_data['name']) ? htmlspecialchars($form_data['name']) : ''; ?>" required>
+                        <input type="text" id="name" name="name" placeholder="Full Name" value="<?php echo isset($form_data['name']) ? htmlspecialchars($form_data['name']) : ''; ?>" required>
                     </div>
 
                     <div class="form-group">
