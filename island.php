@@ -16,9 +16,7 @@ require_once 'auth_check.php';
     <?php include 'includes/navigation.php'; ?>
     
     <section class="intro-content">
-        <div class="container">
             <h1>Island</h1>
-        </div>
     </section>
     
     <section class="island-section">
