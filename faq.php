@@ -23,7 +23,7 @@ require_once 'auth_check.php';
                 <p class="intro-text">Planning your trip to Grenada? We've compiled answers to the most common questions about our tours, booking process, and what to expect during your visit to the Spice Isle.</p>
             </div>
         </section>
-
+        
         <section class="faq-list">
             <div class="faq-item">
                 <h3 class="faq-question">What is included in your tour packages?</h3>
