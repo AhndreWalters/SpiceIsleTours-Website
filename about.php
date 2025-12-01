@@ -14,7 +14,7 @@ require_once 'auth_check.php';
 </head>
 <body>
     <?php include 'includes/navigation.php'; ?>
-
+    
     <main id="content" class="content page-561567" role="main">
         <section class="intro-content deco-right">
             <div class="container">
