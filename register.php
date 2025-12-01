@@ -3,7 +3,7 @@ include 'config/database.php';
 include 'includes/functions.php';
 
 if (isLoggedIn()) {
-    header("Location: index.php.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -47,21 +47,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <video autoplay loop muted playsinline>
             <source src="video/spiceislandbeachresort-video.mp4" type="video/mp4">
         </video>
-    <div class="video-overlay"></div>
-
-
+        <div class="video-overlay"></div>
     </div>
+    
     <div class="auth-container">
         <div class="auth-form">
             <h2>Create Account</h2>
             <p>Join Spice Isle Tours today</p>
             
             <?php if ($error): ?>
-                <div class="error-msg"><?php echo $error; ?></div>
+                <div class="error-msg"><?php echo htmlspecialchars($error); ?></div>
             <?php endif; ?>
             
             <?php if ($success): ?>
-                <div class="success-msg"><?php echo $success; ?></div>
+                <div class="alert-success" style="max-width: 100%; margin: 0 auto 25px auto; padding: 15px; background: #d4edda; color: #155724; border-radius: 10px; border: 1px solid #c3e6cb; text-align: center; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 500;">
+                    <?php echo htmlspecialchars($success); ?>
+                </div>
             <?php endif; ?>
             
             <form method="POST" action="">
@@ -72,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" name="email" placeholder="you@example.com" value="" required>
+                    <input type="email" name="email" placeholder="you@example.com" required>
                 </div>
                 
                 <div class="form-group">
