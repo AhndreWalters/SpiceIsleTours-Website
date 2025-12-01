@@ -305,83 +305,96 @@ body.homepage .intro-content {
   text-align: center;
 }
 
-/* ===== UPDATED H2 TAG STYLES - LIGHTER COLOR & MATCHING P TAG FONT ===== */
-/* Main h2 styling - lighter brown and matching p tag font */
+/* ===== UPDATED H2 TAG STYLES - #c19383 COLOR & ELEGANT TYPOGRAPHY ===== */
+/* Main h2 styling - beautiful terracotta color with elegant font */
 h2 {
-  color: #7a6f68 !important; /* Lighter brown matching p tag color */
-  font-family: "Playfair Display", serif !important; /* Same as p tags */
-  font-weight: 100 !important; /* Same weight as p tags */
-  font-size: clamp(1.5rem, 4vw, 2.2rem) !important; /* Slightly larger than p */
-  margin-bottom: 20px !important;
+  color: #c19383 !important; /* Terracotta/salmon color */
+  font-family: "Playfair Display", serif !important; /* Elegant serif font */
+  font-weight: 400 !important; /* Medium weight for good readability */
+  font-size: clamp(1.8rem, 4vw, 2.5rem) !important; /* Prominent size */
+  margin-bottom: 25px !important;
   text-align: center !important;
-  line-height: 1.4 !important;
-  letter-spacing: 0.3px !important; /* Match p tag letter spacing */
+  line-height: 1.3 !important;
+  letter-spacing: 0.5px !important; /* Slight spacing for elegance */
 }
 
 /* Specific h2 styles for different sections */
 .intro-content h2,
 .subheading {
-  color: #7a6f68 !important; /* Same as p tag color */
-  font-family: "Playfair Display", serif !important; /* Same as p tags */
-  font-weight: 100 !important; /* Same weight as p tags */
-  font-size: clamp(1.2rem, 2.5vw, 1.6rem) !important; /* Size between h1 and p */
+  color: #c19383 !important; /* Terracotta color */
+  font-family: "Playfair Display", serif !important; /* Matching font */
+  font-weight: 400 !important; /* Medium weight */
+  font-size: clamp(1.4rem, 3vw, 1.8rem) !important; /* Slightly smaller */
   margin-bottom: 20px !important;
   text-align: center !important;
-  line-height: 1.6 !important;
-  letter-spacing: 0.3px !important; /* Match p tag */
+  line-height: 1.4 !important;
+  letter-spacing: 0.5px !important;
   text-transform: none !important;
+  font-style: normal !important;
 }
 
 /* Contact page h2 styling */
 .contact-card h2 {
-  color: #7a6f68 !important; /* Lighter brown */
-  font-family: "Playfair Display", serif !important; /* Same as p tags */
-  font-weight: 100 !important; /* Same weight as p tags */
-  font-size: clamp(1.2rem, 3vw, 1.5rem) !important;
+  color: #c19383 !important; /* Terracotta color */
+  font-family: "Playfair Display", serif !important; /* Elegant font */
+  font-weight: 400 !important; /* Medium weight */
+  font-size: clamp(1.4rem, 3vw, 1.7rem) !important;
   margin-bottom: 15px !important;
   text-align: left !important;
-  line-height: 1.5 !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.3px !important;
 }
 
 /* Island page section h2 styling */
 .section-text h2 {
-  color: #7a6f68 !important; /* Lighter brown */
-  font-family: "Playfair Display", serif !important; /* Same as p tags */
-  font-weight: 100 !important; /* Same weight as p tags */
-  font-size: clamp(1.5rem, 4vw, 2rem) !important;
+  color: #c19383 !important; /* Terracotta color */
+  font-family: "Playfair Display", serif !important; /* Elegant font */
+  font-weight: 400 !important; /* Medium weight */
+  font-size: clamp(1.6rem, 4vw, 2.2rem) !important;
   margin-bottom: 20px !important;
   text-align: left !important;
-  line-height: 1.4 !important;
+  line-height: 1.3 !important;
   text-transform: none !important;
-  letter-spacing: 0.3px !important; /* Match p tag */
+  letter-spacing: 0.5px !important;
 }
 
-/* Tour page h2 if used */
+/* Tour page h2 (if used) */
 .tour h2 {
-  color: #7a6f68 !important; /* Lighter brown */
-  font-family: "Playfair Display", serif !important; /* Same as p tags */
-  font-weight: 100 !important; /* Same weight as p tags */
+  color: #c19383 !important; /* Terracotta color */
+  font-family: "Playfair Display", serif !important; /* Elegant font */
+  font-weight: 400 !important; /* Medium weight */
 }
 
-/* FAQ page h2 if used */
+/* FAQ page h2 (if used) */
 .faq-list h2 {
-  color: #7a6f68 !important; /* Lighter brown */
-  font-family: "Playfair Display", serif !important; /* Same as p tags */
-  font-weight: 100 !important; /* Same weight as p tags */
+  color: #c19383 !important; /* Terracotta color */
+  font-family: "Playfair Display", serif !important; /* Elegant font */
+  font-weight: 400 !important; /* Medium weight */
 }
 
 /* Authentication form h2 */
 .auth-form h2 {
-  color: #7a6f68 !important; /* Lighter brown */
-  font-family: "Playfair Display", serif !important; /* Same as p tags */
-  font-weight: 100 !important; /* Same weight as p tags */
+  color: #c19383 !important; /* Terracotta color */
+  font-family: "Playfair Display", serif !important; /* Elegant font */
+  font-weight: 400 !important; /* Medium weight */
+  margin-bottom: 20px !important;
 }
 
-/* Remove any inherited colors from other styles */
+/* About page section titles */
 .section-title {
-  color: #7a6f68 !important; /* Lighter brown */
-  font-family: "Playfair Display", serif !important; /* Same as p tags */
-  font-weight: 100 !important; /* Same weight as p tags */
+  color: #c19383 !important; /* Terracotta color */
+  font-family: "Playfair Display", serif !important; /* Elegant font */
+  font-weight: 400 !important; /* Medium weight */
+  font-size: clamp(1.6rem, 3.5vw, 2rem) !important;
+  margin-bottom: 20px !important;
+}
+
+/* Services/Features h2 */
+.service h2,
+.feature h2 {
+  color: #c19383 !important; /* Terracotta color */
+  font-family: "Playfair Display", serif !important; /* Elegant font */
+  font-weight: 400 !important; /* Medium weight */
 }
 
 @keyframes fadeIn {
@@ -1101,6 +1114,20 @@ a:hover {
   
   .masonry-gallery {
     column-count: 2;
+  }
+  
+  /* Adjust h2 sizes for mobile */
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem) !important;
+  }
+  
+  .intro-content h2,
+  .subheading {
+    font-size: clamp(1.2rem, 3vw, 1.5rem) !important;
+  }
+  
+  .section-text h2 {
+    font-size: clamp(1.4rem, 4vw, 1.7rem) !important;
   }
 }
 
