@@ -130,7 +130,7 @@ body.homepage .sub-menu ul li a.active {
 }
 
 body.homepage .sub-menu li:last-child {
-  background: rgba(255,255,255,0.15);
+  background: transparent;
 }
 
 body.homepage .sub-menu li:last-child a {
