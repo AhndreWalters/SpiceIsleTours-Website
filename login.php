@@ -43,8 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <video autoplay loop muted playsinline>
             <source src="video/spiceislandbeachresort-video.mp4" type="video/mp4">
         </video>
+        <div class="video-overlay"></div>
     </div>
-    <div class="video-overlay"></div>
 
     <div class="auth-container">
         <div class="auth-form">
@@ -52,13 +52,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <p>Welcome back! Please enter your credentials.</p>
             
             <?php if ($error): ?>
-                <div class="error-msg"><?php echo $error; ?></div>
+                <div class="error-msg"><?php echo htmlspecialchars($error); ?></div>
             <?php endif; ?>
             
             <form method="POST" action="">
                 <div class="form-group">
                     <label>Username or Email</label>
-                    <input type="text" name="username" placeholder="Username or Email" <?php echo htmlspecialchars($username); ?>" required>
+                    <input type="text" name="username" value="<?php echo htmlspecialchars($username); ?>" placeholder="Username or email" required>
                 </div>
                 
                 <div class="form-group">
