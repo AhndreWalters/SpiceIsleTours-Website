@@ -20,9 +20,7 @@ require_once 'auth_check.php';
             <div class="container">
                 <h1 class="page-title">Our Tours</h1>
                 <h2 class="subheading">Discover Grenada with Spice Isle Tours</h2>
-                <p class="intro-text">Explore the Spice Isle through curated experiences that blend adventure, history, and natural beauty.
-          Each of our tours is designed to showcase the island’s charm, from waterfalls and cocoa estates
-          to cultural landmarks and scenic drives.</p>
+                <p class="intro-text">Explore the Spice Isle through curated experiences that blend adventure, history, and natural beauty. Each of our tours is designed to showcase the island’s charm, from waterfalls and cocoa estates to cultural landmarks and scenic drives.</p>
             </div>
         </section>
         
