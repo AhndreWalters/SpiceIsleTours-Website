@@ -20,7 +20,7 @@ require_once 'auth_check.php';
             <h1>Island</h1>
             <h2>Experience the Heart of the Caribbean</h2>
             <p>Explore the rich history, vibrant culture, and breathtaking natural beauty that make Grenada one of the Caribbean's most enchanting destinations. From our spice-laden history to our stunning landscapes, discover what makes our island truly special.</p>
-            </div>
+        </div>
     </section>
     
     <section class="island-section">
