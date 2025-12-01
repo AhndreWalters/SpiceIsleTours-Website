@@ -141,7 +141,6 @@ body:not(.homepage) .sub-menu {
   background-color: #222;
 }
 
-/* REMOVE ALL HAMBURGER MENU STYLES */
 .hamburger-menu,
 .nav-overlay {
   display: none !important;
@@ -255,7 +254,6 @@ body.homepage {
 }
 
 /* ===== UNIFIED PAGE CONTENT SPACING ===== */
-/* Apply booking page spacing to ALL content pages */
 body:not(.homepage) .intro-content {
   padding: 160px 0 100px !important;
   width: 100%;
@@ -265,7 +263,6 @@ body:not(.homepage) .intro-content {
   margin-top: 0;
 }
 
-/* Keep homepage specific styling */
 body.homepage .intro-content {
   padding: 0 !important;
   position: static;
@@ -305,26 +302,25 @@ body.homepage .intro-content {
   text-align: center;
 }
 
-/* ===== UPDATED H2 TAG STYLES - #c19383 COLOR & ELEGANT TYPOGRAPHY ===== */
-/* Main h2 styling - beautiful terracotta color with elegant font */
+/* Main h2 styling */
 h2 {
-  color: #c19383 !important; /* Terracotta/salmon color */
-  font-family: "Playfair Display", serif !important; /* Elegant serif font */
-  font-weight: 400 !important; /* Medium weight for good readability */
-  font-size: clamp(1.8rem, 4vw, 2.5rem) !important; /* Prominent size */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
+  font-size: clamp(1.8rem, 4vw, 2.5rem) !important;
   margin-bottom: 25px !important;
   text-align: center !important;
   line-height: 1.3 !important;
-  letter-spacing: 0.5px !important; /* Slight spacing for elegance */
+  letter-spacing: 0.5px !important;
 }
 
 /* Specific h2 styles for different sections */
 .intro-content h2,
 .subheading {
-  color: #c19383 !important; /* Terracotta color */
-  font-family: "Playfair Display", serif !important; /* Matching font */
-  font-weight: 400 !important; /* Medium weight */
-  font-size: clamp(1.4rem, 3vw, 1.8rem) !important; /* Slightly smaller */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
+  font-size: clamp(1.4rem, 3vw, 1.8rem) !important;
   margin-bottom: 20px !important;
   text-align: center !important;
   line-height: 1.4 !important;
@@ -335,9 +331,9 @@ h2 {
 
 /* Contact page h2 styling */
 .contact-card h2 {
-  color: #c19383 !important; /* Terracotta color */
-  font-family: "Playfair Display", serif !important; /* Elegant font */
-  font-weight: 400 !important; /* Medium weight */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
   font-size: clamp(1.4rem, 3vw, 1.7rem) !important;
   margin-bottom: 15px !important;
   text-align: left !important;
@@ -347,9 +343,9 @@ h2 {
 
 /* Island page section h2 styling */
 .section-text h2 {
-  color: #c19383 !important; /* Terracotta color */
-  font-family: "Playfair Display", serif !important; /* Elegant font */
-  font-weight: 400 !important; /* Medium weight */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
   font-size: clamp(1.6rem, 4vw, 2.2rem) !important;
   margin-bottom: 20px !important;
   text-align: left !important;
@@ -358,18 +354,18 @@ h2 {
   letter-spacing: 0.5px !important;
 }
 
-/* Tour page h2 (if used) */
+/* Tour page h2 */
 .tour h2 {
-  color: #c19383 !important; /* Terracotta color */
-  font-family: "Playfair Display", serif !important; /* Elegant font */
-  font-weight: 400 !important; /* Medium weight */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
 }
 
-/* FAQ page h2 (if used) */
+/* FAQ page h2 */
 .faq-list h2 {
-  color: #c19383 !important; /* Terracotta color */
-  font-family: "Playfair Display", serif !important; /* Elegant font */
-  font-weight: 400 !important; /* Medium weight */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
 }
 
 /* Authentication form h2 */
@@ -382,9 +378,9 @@ h2 {
 
 /* About page section titles */
 .section-title {
-  color: #c19383 !important; /* Terracotta color */
-  font-family: "Playfair Display", serif !important; /* Elegant font */
-  font-weight: 400 !important; /* Medium weight */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
   font-size: clamp(1.6rem, 3.5vw, 2rem) !important;
   margin-bottom: 20px !important;
 }
@@ -392,9 +388,9 @@ h2 {
 /* Services/Features h2 */
 .service h2,
 .feature h2 {
-  color: #c19383 !important; /* Terracotta color */
-  font-family: "Playfair Display", serif !important; /* Elegant font */
-  font-weight: 400 !important; /* Medium weight */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
 }
 
 @keyframes fadeIn {
@@ -980,7 +976,6 @@ a:hover {
   box-shadow: 0 8px 20px rgba(193, 147, 131, 0.35);
 }
 
-/* Specific adjustments for authentication forms */
 .auth-form .form-group {
   margin-bottom: 25px;
 }
@@ -1046,7 +1041,6 @@ a:hover {
 }
 
 @media (max-width: 850px) {
-  /* REMOVE ALL MOBILE MENU STYLES - KEEP NAVIGATION VISIBLE */
   .sub-menu {
     display: flex !important;
     padding: 15px 0;
@@ -1116,7 +1110,6 @@ a:hover {
     column-count: 2;
   }
   
-  /* Adjust h2 sizes for mobile */
   h2 {
     font-size: clamp(1.5rem, 4vw, 1.8rem) !important;
   }
@@ -1222,7 +1215,6 @@ a:hover {
   margin: 0 auto 25px auto;
 }
 
-/* For consistency with other alerts */
 .alert-success {
   background: #d4edda;
   color: #155724;
