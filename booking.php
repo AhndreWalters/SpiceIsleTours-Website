@@ -38,7 +38,7 @@ if (isset($_SESSION['form_data'])) {
         <section class="intro-content">
             <div class="container">
                 <h1 class="page-title">Booking</h1>
-                 <h2>Secure Your Island Adventure</h2>
+                <h2>Secure Your Island Adventure</h2>
                 <p>Reserve your spot on one of our unforgettable Spice Isle Tours below. Fill out the booking form with your details and preferred tour selection, and we'll get back to you promptly to confirm your reservation and provide all the necessary details for your Grenadian adventure.</p>
             </div>
         </section>
@@ -48,16 +48,17 @@ if (isset($_SESSION['form_data'])) {
                 <div class="alert-success" style="max-width: 600px; margin: 20px auto; padding: 15px; background: #d4edda; color: #155724; border-radius: 8px; border: 1px solid #c3e6cb;">
                     <?php echo htmlspecialchars($success_message); ?>
                 </div>
-            <?php endif; ?>
-            
-            <?php if (!empty($error_messages)): ?>
-                <div class="alert-error" style="max-width: 600px; margin: 20px auto; padding: 15px; background: #f8d7da; color: #721c24; border-radius: 8px; border: 1px solid #f5c6cb;">
-                    <h4>Please fix the following errors:</h4>
-                    <ul style="margin: 10px 0; padding-left: 20px;">
-                        <?php foreach ($error_messages as $error): ?>
-                            <li><?php echo htmlspecialchars($error); ?></li>
-                        <?php endforeach; ?>
-                    </ul>
+                
+                <?php endif; ?>
+                
+                <?php if (!empty($error_messages)): ?>
+                    <div class="alert-error" style="max-width: 600px; margin: 20px auto; padding: 15px; background: #f8d7da; color: #721c24; border-radius: 8px; border: 1px solid #f5c6cb;">
+                        <h4>Please fix the following errors:</h4>
+                        <ul style="margin: 10px 0; padding-left: 20px;">
+                            <?php foreach ($error_messages as $error): ?>
+                                <li><?php echo htmlspecialchars($error); ?></li>
+                                <?php endforeach; ?>
+                            </ul>
                 </div>
             <?php endif; ?>
         </div>
