@@ -39,33 +39,30 @@ if (isset($_SESSION['contact_form_data'])) {
         <section class="intro-content">
             <div class="container">
                 <h1 class="page-title">Contact Us</h1>
-                 <h2>Get In Touch With Our Team</h2>
+                <h2>Get In Touch With Our Team</h2>
                 
                 <div id="form-messages">
                     <?php if ($success_message): ?>
                         <div class="alert-success" style="max-width: 600px; margin: 20px auto; padding: 15px; background: #d4edda; color: #155724; border-radius: 8px; border: 1px solid #c3e6cb;">
                             <?php echo htmlspecialchars($success_message); ?>
                         </div>
-                    <?php endif; ?>
-                    
-                    <?php if (!empty($error_messages)): ?>
-                        <div class="alert-error" style="max-width: 600px; margin: 20px auto; padding: 15px; background: #f8d7da; color: #721c24; border-radius: 8px; border: 1px solid #f5c6cb;">
-                            <h4 style="margin: 0 0 10px 0;">Please fix the following errors:</h4>
-                            <ul style="margin: 10px 0; padding-left: 20px;">
-                                <?php foreach ($error_messages as $error): ?>
-                                    <li><?php echo htmlspecialchars($error); ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </div>
-                    <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if (!empty($error_messages)): ?>
+                            <div class="alert-error" style="max-width: 600px; margin: 20px auto; padding: 15px; background: #f8d7da; color: #721c24; border-radius: 8px; border: 1px solid #f5c6cb;">
+                                <h4 style="margin: 0 0 10px 0;">Please fix the following errors:</h4>
+                                <ul style="margin: 10px 0; padding-left: 20px;">
+                                    <?php foreach ($error_messages as $error): ?>
+                                        <li><?php echo htmlspecialchars($error); ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                            </div>
+                            <?php endif; ?>
                 </div>
-
                 <script src="js/contact.js"></script>
-
                 <p>We'd love to hear from you. Feel free to reach out using the details below or send us a message directly through the form.</p>
             </div>
         </section>
-
+        
         <section class="contact-section">
             <div class="contact-card">
                 <h2>Address</h2>
@@ -91,6 +88,7 @@ if (isset($_SESSION['contact_form_data'])) {
                             <label for="last-name">Last Name</label>
                             <input type="text" id="last-name" name="last_name" placeholder="Last name" value="<?php echo isset($form_data['last_name']) ? htmlspecialchars($form_data['last_name']) : ''; ?>" required>
                         </div>
+                    
                     </div>
 
                     <div class="form-group">
