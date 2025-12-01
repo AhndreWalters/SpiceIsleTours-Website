@@ -1,4 +1,4 @@
-/* ===== RESET & BASE STYLES ===== */
+/*  RESET & BASE STYLES  */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +24,7 @@ body {
   flex-direction: column;
 }
 
-/* ===== MAIN CONTENT WRAPPER ===== */
+/*  MAIN CONTENT WRAPPER  */
 .content {
   flex: 1;
   width: 100%;
@@ -40,7 +40,7 @@ body {
   padding: 0 20px;
 }
 
-/* ===== NAVIGATION STYLES ===== */
+/*  NAVIGATION STYLES  */
 .sub-menu {
   position: fixed;
   top: 0;
@@ -146,7 +146,7 @@ body:not(.homepage) .sub-menu {
   display: none !important;
 }
 
-/* ===== HOMEPAGE STYLES ===== */
+/* HOMEPAGE STYLES */
 body.homepage {
   margin: 0;
   overflow: hidden;
@@ -253,7 +253,7 @@ body.homepage {
   width: 100%;
 }
 
-/* ===== UNIFIED PAGE CONTENT SPACING ===== */
+/* UNIFIED PAGE CONTENT SPACING */
 body:not(.homepage) .intro-content {
   padding: 160px 0 100px !important;
   width: 100%;
@@ -370,9 +370,9 @@ h2 {
 
 /* Authentication form h2 */
 .auth-form h2 {
-  color: #c19383 !important; /* Terracotta color */
-  font-family: "Playfair Display", serif !important; /* Elegant font */
-  font-weight: 400 !important; /* Medium weight */
+  color: #c19383 !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
   margin-bottom: 20px !important;
 }
 
@@ -404,7 +404,7 @@ h2 {
   }
 }
 
-/* ===== AUTHENTICATION STYLES ===== */
+/* AUTHENTICATION STYLES */
 body.auth-page {
   margin: 0;
   overflow: auto;
@@ -525,7 +525,7 @@ a:hover {
   }
 }
 
-/* ===== BOOKING PAGE STYLES ===== */
+/* BOOKING PAGE STYLES */
 .alert-success {
   background: #d4edda;
   color: #155724;
@@ -581,7 +581,7 @@ a:hover {
   animation: fadeIn 1s ease;
 }
 
-/* ===== CONTACT PAGE STYLES ===== */
+/* CONTACT PAGE STYLES */
 .contact-section {
   max-width: 600px;
   margin: 40px auto;
@@ -660,7 +660,7 @@ a:hover {
   min-width: 0;
 }
 
-/* ===== FAQ PAGE STYLES ===== */
+/* FAQ PAGE STYLES */
 .faq-list {
   max-width: 900px;
   margin: 40px auto 100px;
@@ -728,7 +728,7 @@ a:hover {
   margin-top: 20px;
 }
 
-/* ===== GALLERY PAGE STYLES ===== */
+/* GALLERY PAGE STYLES */
 .gallery-section {
   width: 90%;
   max-width: 1400px;
@@ -790,7 +790,7 @@ a:hover {
   color: #c19383;
 }
 
-/* ===== ISLAND PAGE STYLES ===== */
+/* ISLAND PAGE STYLES */
 .island-section {
   display: flex;
   align-items: center;
@@ -854,7 +854,7 @@ a:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* ===== TOURS PAGE STYLES ===== */
+/* TOURS PAGE STYLES */
 .tours-list {
   max-width: 900px;
   margin: 20px auto 80px;
@@ -897,7 +897,7 @@ a:hover {
   line-height: 1.8;
 }
 
-/* ===== UNIFIED FORM STYLES ===== */
+/* UNIFIED FORM STYLES */
 .form-group {
   margin-bottom: 30px;
   text-align: left;
@@ -988,7 +988,7 @@ a:hover {
   background: white;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/*  RESPONSIVE DESIGN */
 @media (max-width: 1200px) {
   .masonry-gallery {
     column-count: 3;
@@ -1198,7 +1198,7 @@ a:hover {
   }
 }
 
-/* ===== SUCCESS MESSAGE STYLES ===== */
+/* SUCCESS MESSAGE STYLES  */
 .success-msg {
   background: rgba(212, 237, 218, 0.95);
   color: #155724;
