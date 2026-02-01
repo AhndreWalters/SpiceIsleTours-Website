@@ -1,4 +1,5 @@
 # Spice Isle Tours Website
+<img src="https://github.com/AhndreWalters/SpiceIsleTours-Website/blob/main/SIT-Website-Screenshot.png">
 
 ## Overview
 PHP-based website for a Grenadian tourism business. Final project for the Web Design course at T.A. Marryshow Community College. Features user authentication, database integration, and booking functionality.
