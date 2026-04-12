@@ -1,8 +1,9 @@
 # Spice Isle Tours Website
-<img src="https://github.com/AhndreWalters/SpiceIsleTours-Website/blob/main/SIT-Website-Screenshot.png">
 
-## Overview
+
 PHP-based website for a Grenadian tourism business. Final project for the Web Design course at T.A. Marryshow Community College. Features user authentication, database integration, and booking functionality.
+
+<img src="https://github.com/AhndreWalters/SpiceIsleTours-Website/blob/main/SIT-Website-Screenshot.png">
 
 ## Features
 - User authentication system (login/register)
@@ -32,8 +33,5 @@ Demonstrates full-stack web development with PHP and MySQL, including:
 - Form processing and validation
 - Responsive web design
 - Docker containerization
-
-## License
-Educational project showcasing full-stack web development with PHP and MySQL.
 
 <strong>[© 2025 Ahndre Walters](https://github.com/AhndreWalters/SpiceIsleTours-Website/blob/main/LICENSE) · Spice Isle Tours Website · TAMCC Web Design Course · College Course Final Project</strong>
